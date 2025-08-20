@@ -1,14 +1,21 @@
+# Streamlit
 streamlit==1.26.1
-streamlit==1.26.1
-langchain>=0.1.0,<1.0
-langchain-communities
-google-generativeai
-langchain-community==0.0.254
-faiss-cpu==1.7.4
-PyPDF2==3.1.0
-transformers==4.40.0
-torch==2.1.0
-sentence-transformers==2.2.2
-google-cloud-aiplatform==2.24.0
-grpcio==1.59.1
-python-dotenv==1.0.0
+
+# LangChain for RAG and document processing
+langchain>=0.1.328,<1.0
+langchain-communities>=0.0.17
+
+# Google Generative AI
+google-generativeai>=0.3.0
+
+# PDF handling
+pypdf>=3.12.0
+
+# FAISS for vector storage
+faiss-cpu>=1.7.4
+
+# Utilities for Streamlit UI
+rich>=14.1.0
+markdown-it-py>=4.0.0
+mdurl>=0.1.2
+pygments>=2.19.2
