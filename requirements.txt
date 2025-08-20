@@ -1,23 +1,13 @@
-# Streamlit and UI
 streamlit==1.26.1
 rich<14
-
-# LangChain and related modules
-langchain>=0.1.328,<1.0
-langchain_community
-langchain-google>=0.1.15
-
-# Vectorstore
-faiss-cpu
-
-# PDF loader dependencies
-PyPDF2
-
-# NLP / Transformers (if used)
-transformers>=4.30.0
-sentence-transformers>=2.2.2
-
-# Utilities
 markdown-it-py==4.0.0
 mdurl==0.1.2
 pygments==2.19.2
+langchain>=0.1.328,<1.0
+langchain_community
+langchain-google>=0.1.15
+faiss-cpu
+PyPDF2
+transformers>=4.30.0
+sentence-transformers>=2.2.2
+
