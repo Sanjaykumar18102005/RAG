@@ -1,20 +1,9 @@
 import os
-import streamlit as st
 
-# ================================
-# Google API Key (from Streamlit secrets)
-# ================================
-GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY")
-if not GOOGLE_API_KEY:
-    raise ValueError("❌ GOOGLE_API_KEY not found! Add it in Streamlit Secrets.")
+# Set your Gemini API Key (from AI Studio or Vertex AI)
+os.environ["GOOGLE_API_KEY"] = "AIzaSyBzALzAl7wbe8pgX6F-tui8LPy1sBpyrCg"
 
-# ================================
 # Model choices
-# ================================
 GEMINI_MODEL = "gemini-1.5-flash"         # fast + cheap
 EMBEDDING_MODEL = "models/text-embedding-004"  # for document embeddings
-
-# ================================
-# FAISS Vectorstore path
-# ================================
-VECTORSTORE_PATH = r"C:\python\RAG\vectorstore"
+VECTORSTORE_PATH = r"C:\python\rag-gemini-app\vectorstore\faiss_index"
